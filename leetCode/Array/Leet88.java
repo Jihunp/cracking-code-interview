@@ -1,6 +1,7 @@
 import java.util.Arrays;
 
 class Leet88 {
+  /*
   public static void main(String[] args) {
     System.out.println("hello");
     int[] nums1 = {1,2,3,0,0,0};
@@ -9,6 +10,8 @@ class Leet88 {
     int n = 3;
     merge(nums1, m, nums2, n);
   }
+  */
+  
   public static void merge(int[] nums1, int m, int[] nums2, int n) {
     int a = m - 1;
     int b = n - 1;
