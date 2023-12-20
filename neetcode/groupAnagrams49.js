@@ -36,3 +36,22 @@ const getCode = (char) => char.charCodeAt(0) - 'a'.charCodeAt(0);
 
 const buildHash = (frequency) => frequency.toString();
 
+// another way
+
+/**
+ * @param {string[]} strs
+ * @return {string[][]}
+ */
+function groupAnagrams(strs) {
+  let result = {};
+  for(let word of strs) {
+      const sortedWord = word.split('').sort().join('');
+      //if result has sorted word then push into array
+      if(result[sortedWord]) {
+          result[sortedWord].push(word);
+      } else {
+          result[sortedWord] = [word];
+      }
+  }
+  return Object.values(result);
+}
