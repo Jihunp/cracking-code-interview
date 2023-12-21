@@ -29,7 +29,7 @@ var topKFrequent = function (nums, k) {
   });
 
   let output = [];
-  for (let i = 0; i < nums.length; i++) {
+  for (let i = 0; i < k; i++) {
     output.push(sortedResult[i][0]);
   }
   return output;
